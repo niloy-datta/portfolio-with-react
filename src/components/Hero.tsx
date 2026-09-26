@@ -1,6 +1,7 @@
 import React from "react";
 // Data file import করা হচ্ছে যাতে dynamic data দেখানো যায়
 import { portfolio } from "../data/portfolio";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
 // Hero Component: এটা website-এর সবচেয়ে প্রথম অংশ। 
 // এখানে আমার ছবি, নাম আর short introduction থাকবে।
@@ -14,7 +15,7 @@ const Hero: React.FC = () => {
         
         {/* Left Side: Text Content */}
         <div className="flex-1 text-center md:text-left">
-          <p className="text-blue-500 font-medium tracking-wider mb-2">HI THERE, I'M</p>
+          <p className="text-blue-500 font-medium tracking-wider mb-2">CSE STUDENT · JAVA BACKEND FOCUS</p>
           
           {/* নামটা অনেক বড় (text-5xl), bold এবং gradient color-এর হবে */}
           <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-slate-400">
@@ -22,7 +23,7 @@ const Hero: React.FC = () => {
           </h1>
           
           {/* role এবং tagline */}
-          <h2 className="text-2xl md:text-3xl font-semibold text-slate-300 mb-6">
+          <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-6">
             {portfolio.role}
           </h2>
           <p className="text-lg text-slate-400 max-w-xl mb-8 mx-auto md:mx-0 leading-relaxed">
@@ -30,18 +31,47 @@ const Hero: React.FC = () => {
           </p>
           
           {/* Call to Action Button */}
-          <div className="flex justify-center md:justify-start gap-4">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4">
             <a 
               href="#projects" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 shadow-lg shadow-blue-500/30 hover:-translate-y-1"
             >
-              View My Work
+              View Projects →
             </a>
             <a 
               href="#contact" 
               className="border border-slate-700 hover:border-slate-500 text-slate-300 px-8 py-3 rounded-full font-medium transition-all duration-300 hover:-translate-y-1"
             >
               Contact Me
+            </a>
+          </div>
+
+          {/* Social quick links below CTA buttons */}
+          <div className="flex items-center justify-center md:justify-start gap-6 mt-8 pt-2">
+            <a
+              href={portfolio.socials.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-slate-400 hover:text-white text-sm font-medium transition-colors"
+            >
+              <FaGithub size={18} />
+              <span>GitHub</span>
+            </a>
+            <a
+              href={portfolio.socials.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-slate-400 hover:text-blue-400 text-sm font-medium transition-colors"
+            >
+              <FaLinkedin size={18} className="text-blue-400" />
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href={`mailto:${portfolio.socials.email}`}
+              className="flex items-center gap-2 text-slate-400 hover:text-blue-400 text-sm font-medium transition-colors"
+            >
+              <FaEnvelope size={18} className="text-blue-400" />
+              <span>Email</span>
             </a>
           </div>
         </div>
