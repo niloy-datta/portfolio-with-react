@@ -12,8 +12,9 @@ export const portfolio = {
   // Social links - Navbar বা Footer-এ click করলে এই link-গুলোতে যাবে
   socials: {
     github: "https://github.com/niloy-datta",
-    linkedin: "https://linkedin.com/in/niloy-datta-1634b31a3",
-    email: "niloy.datta152@gmail.com"
+    linkedin: "https://www.linkedin.com/in/niloy-d-9897473a8/",
+    email: "niloy.datta.dev@gmail.com",
+    location: "D Block, Upashahar, Sylhet"
   },
 
   // About section-এর detail text
