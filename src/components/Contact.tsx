@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
               <div className="text-left">
                 <span className="block text-xs font-medium text-slate-400">GitHub</span>
                 <span className="block text-sm font-semibold text-slate-200 group-hover:text-white transition-colors">
-                  github.com/Niloy152
+                  github.com/niloy-datta
                 </span>
               </div>
             </a>
