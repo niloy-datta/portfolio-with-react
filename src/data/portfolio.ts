@@ -14,7 +14,8 @@ export const portfolio = {
     github: "https://github.com/niloy-datta",
     linkedin: "https://www.linkedin.com/in/niloy-d-9897473a8/",
     email: "niloy.datta.dev@gmail.com",
-    location: "D Block, Upashahar, Sylhet"
+    location: "Tilagar, Sylhet",
+    mapsUrl: "https://maps.app.goo.gl/NUU8nJGRc6JVbMVS9"
   },
 
   // About section-এর detail text

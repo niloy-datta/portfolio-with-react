@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
                   <span className="font-bold text-white text-sm">Sylhet Base</span>
                 </div>
                 <a 
-                  href="https://maps.google.com/?q=Block+D,+Shahjalal+Upashahar,+Sylhet,+Bangladesh"
+                  href="https://maps.app.goo.gl/NUU8nJGRc6JVbMVS9"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-white transition-colors"
@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
                 </a>
               </div>
               <p className="text-xs text-slate-400 mt-1">
-                Block D, Sylhet, Bangladesh
+                Tilagar, Sylhet, Bangladesh
               </p>
               <p className="text-[10px] text-slate-500 mt-0.5">
                 No reviews
@@ -141,14 +141,14 @@ const Contact: React.FC = () => {
             <div className="w-full h-full relative overflow-hidden flex-1 min-h-[380px]">
               <iframe
                 title="Sylhet Base Location"
-                src="https://maps.google.com/maps?q=Shahjalal+Upashahar+Block+D,+Sylhet,+Bangladesh&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=24.888110,91.883741&hl=en&z=15&output=embed"
                 className="w-full h-full border-0 min-h-[380px] pointer-events-auto filter invert-[90%] hue-rotate-180 contrast-[90%] brightness-[85%]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
 
               {/* Pulsing Pin Overlay */}
-              <div className="absolute top-[58%] left-[58%] -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none flex flex-col items-center">
+              <div className="absolute top-[52%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none flex flex-col items-center">
                 <div className="relative flex items-center justify-center">
                   <span className="w-6 h-6 rounded-full bg-cyan-400/40 animate-ping absolute"></span>
                   <span className="w-4 h-4 rounded-full bg-cyan-400 border-2 border-slate-900 shadow-lg relative z-10"></span>
@@ -183,17 +183,22 @@ const Contact: React.FC = () => {
           </a>
 
           {/* Location Badge */}
-          <div className="flex items-center gap-3.5 bg-slate-900/80 border border-slate-800 px-5 py-4 rounded-2xl">
-            <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+          <a
+            href="https://maps.app.goo.gl/NUU8nJGRc6JVbMVS9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3.5 bg-slate-900/80 hover:bg-slate-850 border border-slate-800 hover:border-slate-700 px-5 py-4 rounded-2xl transition-all duration-200 group"
+          >
+            <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform shrink-0">
               <FiMapPin size={18} />
             </div>
             <div className="min-w-0">
               <span className="block text-xs text-slate-400 font-medium">Location</span>
-              <span className="block text-sm font-semibold text-slate-200 truncate">
+              <span className="block text-sm font-semibold text-slate-200 group-hover:text-white truncate transition-colors">
                 {portfolio.socials.location}
               </span>
             </div>
-          </div>
+          </a>
 
           {/* GitHub Badge */}
           <a
