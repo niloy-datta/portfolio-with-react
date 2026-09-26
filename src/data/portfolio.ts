@@ -25,7 +25,7 @@ export const portfolio = {
   skills: {
     frontend: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
     backend: ["FastAPI", "REST API", "MySQL", "DAO"],
-    tools: ["Git", "GitHub", "VS Code", "Postman", "Figma"]
+    tools: ["IntelliJ IDEA", "WebStorm", "Android Studio", "GitHub", "Canva"]
   },
 
   // Projects - object-এর array. Map করে project card বানানো হবে।

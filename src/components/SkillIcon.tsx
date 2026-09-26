@@ -23,9 +23,10 @@ import {
   SiC,
   SiFastapi,
   SiIntellijidea,
-  SiWebstorm
+  SiWebstorm,
+  SiAndroidstudio
 } from "react-icons/si";
-import { FaCss3Alt, FaJava, FaCode, FaPaintbrush } from "react-icons/fa6";
+import { FaCss3Alt, FaJava, FaCode } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
 import { TbApi, TbDatabase } from "react-icons/tb";
 
@@ -123,7 +124,16 @@ const SkillIcon: React.FC<SkillIconProps> = ({ name, className = "w-4 h-4", size
     return <SiFigma size={size} className={className} style={{ color: "#F24E1E" }} title={name} />;
   }
   if (normalized.includes("canva")) {
-    return <FaPaintbrush size={size} className={className} style={{ color: "#00C4CC" }} title={name} />;
+    return (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={className} xmlns="http://www.w3.org/2000/svg">
+        <title>{name}</title>
+        <circle cx="12" cy="12" r="11" fill="#00C4CC"/>
+        <path d="M14.5 15C13.5 16 12 16.3 10.7 15.8C9.5 15.3 8.7 14 8.8 12.7C8.9 11.1 10 9.8 11.5 9.2C12.8 8.7 14.3 9.1 15.1 10.2L14 11.1C13.5 10.3 12.4 10 11.6 10.3C10.6 10.7 10 11.7 9.9 12.7C9.8 13.6 10.3 14.4 11.1 14.7C11.9 15 12.9 14.8 13.6 14.1L14.5 15Z" fill="white"/>
+      </svg>
+    );
+  }
+  if (normalized.includes("android")) {
+    return <SiAndroidstudio size={size} className={className} style={{ color: "#3DDC84" }} title={name} />;
   }
   if (normalized.includes("intellij")) {
     return <SiIntellijidea size={size} className={className} style={{ color: "#FE315D" }} title={name} />;

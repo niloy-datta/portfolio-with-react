@@ -61,7 +61,7 @@ const Skills: React.FC = () => {
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-slate-700 transition-colors shadow-lg">
             <h3 className="text-xl font-semibold text-slate-200 mb-6 flex items-center gap-2.5">
               <span className="w-2.5 h-2.5 bg-purple-500 rounded-full shadow-sm shadow-purple-500/50"></span>
-              Tools
+              Tools & Platforms
             </h3>
             <div className="flex flex-wrap gap-3">
               {portfolio.skills.tools.map((skill, index) => (
