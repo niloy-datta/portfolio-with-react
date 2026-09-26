@@ -27,6 +27,7 @@ import {
 } from "react-icons/si";
 import { FaCss3Alt, FaJava, FaCode, FaPaintbrush } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
+import { TbApi, TbDatabase } from "react-icons/tb";
 
 interface SkillIconProps {
   name: string;
@@ -85,6 +86,12 @@ const SkillIcon: React.FC<SkillIconProps> = ({ name, className = "w-4 h-4", size
   }
   if (normalized.includes("fastapi")) {
     return <SiFastapi size={size} className={className} style={{ color: "#009688" }} title={name} />;
+  }
+  if (normalized.includes("api") || normalized.includes("rest")) {
+    return <TbApi size={size} className={className} style={{ color: "#38BDF8" }} title={name} />;
+  }
+  if (normalized === "dao" || normalized.includes("dao")) {
+    return <TbDatabase size={size} className={className} style={{ color: "#A78BFA" }} title={name} />;
   }
   if (normalized === "c++" || normalized.includes("cpp")) {
     return <SiCplusplus size={size} className={className} style={{ color: "#00599C" }} title={name} />;

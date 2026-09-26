@@ -24,7 +24,7 @@ export const portfolio = {
   // Skills - category অনুযায়ী ভাগ করা। UI-তে এগুলো আলাদা আলাদা block হিসেবে দেখাবে।
   skills: {
     frontend: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
-    backend: ["Node.js", "Express.js", "MongoDB", "MySQL"],
+    backend: ["FastAPI", "REST API", "MySQL", "DAO"],
     tools: ["Git", "GitHub", "VS Code", "Postman", "Figma"]
   },
 
